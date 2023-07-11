@@ -17,7 +17,7 @@ class AdminSerializer (serializers.ModelSerializer):
 class CitaSerializer (serializers.ModelSerializer):
     class Meta:
         model = Cita
-        fields = ('medico','fecha','hora')
+        fields = ('paciente','medico','fecha','hora')
         
     
         
@@ -31,7 +31,7 @@ class MedicamentoSerializer (serializers.ModelSerializer):
 class PacienteSerializer (serializers.ModelSerializer):
     class Meta:
         model = Paciente
-        fields = ('nombre','apellido','edad')
+        fields = ('nombre','apellido','edad','correo','alergia')
         
         
 class MedicoSerializer (serializers.ModelSerializer):
