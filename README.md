@@ -45,4 +45,4 @@ Este archivo proporciona los pasos necesarios para configurar y ejecutar el proy
    
    Para revisar el **swagger** consultar en  en [http://localhost:8000/swagger/](http://localhost:8000/swagger)
 
-**Nota:** Asegúrate de tener Python instalado en tu sistema antes de comenzar con estos pasos.
+**Nota:** Asegúrate de tener **Python 3.11.4** instalado en tu sistema antes de comenzar con estos pasos.
