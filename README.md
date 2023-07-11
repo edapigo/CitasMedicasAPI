@@ -11,7 +11,7 @@ Este archivo proporciona los pasos necesarios para configurar y ejecutar el proy
    ```
    Para Windows:
    ```bash
-   .\venv\Scripts\Activate
+   .\venv\Scripts\activate
    ```
    Para macOS/Linux:
    ```bash
@@ -21,7 +21,14 @@ Este archivo proporciona los pasos necesarios para configurar y ejecutar el proy
    ```bash
    pip install -r requirements.txt
    ```
-3. **Crear el superusuario**
+4. **Aplicar las migraciones**
+   ```bash
+   python manage.py migrate
+   ```
+5. **Crear el superusuario**
+   ```bash
+   python manage.py createsuperuser
+   ```
    Se te solicitará ingresar un nombre de usuario, un correo electrónico y una contraseña para el superusuario.
 
    Por ejemplo:
@@ -30,13 +37,9 @@ Este archivo proporciona los pasos necesarios para configurar y ejecutar el proy
    Email: admin@gmail.com
    Password: 123
    ```
-5. **Aplicar las migraciones**
-   ```bash
-   python manage.py migrate
-   ```
 6. **Ejecutar el servidor de desarrollo**
    ```bash
-   python manage.py migrate
+   python manage.py runserver
    ```
    El servidor se ejecutará en [http://localhost:8000](http://localhost:8000) por defecto.
    
