@@ -5,12 +5,17 @@ from django.db import models
 class Admin1(models.Model):
     usuario= models.CharField(max_length=100)
     correo = models.EmailField((""), max_length=254)
-    contraseña = models.PositiveSmallIntegerField()
+    contraseña = models.CharField(max_length=100)
+    def __str__(self):
+      return self.usuario
 
 class Paciente(models.Model):
     nombre = models.CharField(max_length=100)
     apellido = models.CharField(max_length=100)
     edad = models.PositiveSmallIntegerField()
+    correo = models.CharField(max_length=100, default=" ")
+    alergia = models.CharField(max_length=100, default=" ")
+    
     
 
 
