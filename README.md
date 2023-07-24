@@ -44,5 +44,11 @@ Este archivo proporciona los pasos necesarios para configurar y ejecutar el proy
    El servidor se ejecutará en [http://localhost:8000](http://localhost:8000) por defecto.
    
    Para revisar el **swagger** consultar en  en [http://localhost:8000/swagger/](http://localhost:8000/swagger)
+   
+8. **Ejecutar testing**
+   ```bash
+   python manage.py test
+   ```
 
 **Nota:** Asegúrate de tener **Python 3.11.4** instalado en tu sistema antes de comenzar con estos pasos.
+
