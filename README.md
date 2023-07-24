@@ -1,7 +1,7 @@
 # Citas médicas api - Configuración y Ejecución
 
 Este archivo proporciona los pasos necesarios para configurar y ejecutar el proyecto Django. Asegúrate de seguir los pasos en el orden indicado para evitar problemas.
-
+Version de Python : **3.11.4**
 ## Pasos
 
 1. **Crear y activar el entorno virtual|**
@@ -50,5 +50,5 @@ Este archivo proporciona los pasos necesarios para configurar y ejecutar el proy
    python manage.py test
    ```
 
-**Nota:** Asegúrate de tener **Python 3.11.4** instalado en tu sistema antes de comenzar con estos pasos.
+**Nota:** Asegúrate de tener información en la base de datos para hacer el testing.
 
