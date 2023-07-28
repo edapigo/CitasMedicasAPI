@@ -1,54 +1,66 @@
-# Citas médicas api - Configuración y Ejecución
+# Proyecto-SIPAU
+Sistema web m&eacute;dico donde podras:
 
-Este archivo proporciona los pasos necesarios para configurar y ejecutar el proyecto Django. Asegúrate de seguir los pasos en el orden indicado para evitar problemas.
-Version de Python : **3.11.4**
-## Pasos
+1. Reservar citas medicas.
+2. Registrar usuarios (clientes, empleados)
+3. Ingreso de doctores
+4. Especialidades
+5. Facturaci&oacute;n 
 
-1. **Crear y activar el entorno virtual|**
+y mucho m&aacute;s, proyecto realizado con el framework **Django** y **python**.
 
-   ```bash
-   python -m venv venv
-   ```
-   Para Windows:
-   ```bash
-   .\venv\Scripts\activate
-   ```
-   Para macOS/Linux:
-   ```bash
-   source venv/bin/activate
-   ```
-2. **Instalar las dependencias**
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. **Aplicar las migraciones**
-   ```bash
-   python manage.py migrate
-   ```
-5. **Crear el superusuario**
-   ```bash
-   python manage.py createsuperuser
-   ```
-   Se te solicitará ingresar un nombre de usuario, un correo electrónico y una contraseña para el superusuario.
 
-   Por ejemplo:
-   ```txt
-   Username: JordanVillao
-   Email: admin@gmail.com
-   Password: 123
-   ```
-6. **Ejecutar el servidor de desarrollo**
-   ```bash
-   python manage.py runserver
-   ```
-   El servidor se ejecutará en [http://localhost:8000](http://localhost:8000) por defecto.
-   
-   Para revisar el **swagger** consultar en  en [http://localhost:8000/swagger/](http://localhost:8000/swagger)
-   
-8. **Ejecutar testing**
-   ```bash
-   python manage.py test
-   ```
+### Configuraci&oacute;n entorno virtual
 
-**Nota:** Asegúrate de tener información en la base de datos para hacer el testing.
+##### Pasos Opcionales
+Se recomienda crear un entorno virtualizado para no compremeter el real, pero es opcional dependera de cada persona.
 
+1. instalar venv (Opcional)
+`pip install virtualenv`
+
+2. crear entorno virtualizado (Opcional)
+`python -m virtualenv ven`
+
+3. Activar entorno
+`./venv/Scripts/Activate`
+
+##### Pasos obligatorios del proyecto
+
+1. Instalar Django
+`pip install django`
+
+2. Una ves descarago, crear su usuario
+`python-admin createsuperuser`
+
+Puede ser cualquiera por ejemplo:
+
+> usuer: JordanVillao (ejemplo)
+>> email: admin@gmail.com
+>>> contraseña: 123
+
+3. Mover las carpetas al sistema
+
+4. Ejecutar migraciones
+> `python magane.py migrate`
+>> `python manage.py makemigrations`
+>>> `python magane.py migrate`
+
+4. Levantar el servidor
+`python manage.py runserver`
+
+=============================================
+##### SI LES SALE ERROR
+Puede ser por varias razones entre ellas puede faltar el restframework
+1. Instalar
+`pip install djangorestframework`
+2. Instalar descargar coreapi 
+`pip install coreapi`
+3. Tambien instalar drf_yasg para swagger
+`pip install -U drf-yasg`
+
+4. Ejecutar migraciones
+> `python magane.py migrate`
+>> `python manage.py makemigrations`
+>>> `python magane.py migrate`
+
+Listo **happing coding ;)**
